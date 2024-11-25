@@ -1,0 +1,21 @@
+.netsparks-bookmarks {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.netsparks-bookmarks-content {
+  @include netsparks-flex-container();
+  @include netsparks-flex-vertical();
+  width: 100%;
+}
+
+.netsparks-bookmarks-action-bar {
+  @include netsparks-flex-container();
+  opacity: 0;
+}
+
+.netsparks-bookmarks-header:hover .netsparks-bookmarks-action-bar {
+  opacity: 1;
+}

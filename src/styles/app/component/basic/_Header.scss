@@ -1,0 +1,27 @@
+.netsparks-header {
+  @include netsparks-flex-container();
+  border-bottom: solid 1px $gray-700;
+  margin-bottom: 0.675rem;
+}
+
+.netsparks-header-title {
+  padding-left: 0.675rem;
+  padding-top: 0.675rem;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.netsparks-header-action-bar {
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding-top: 0.675rem;
+  padding-right: 0.675rem;
+}
+
+.netsparks-header-action-bar-icon-button {
+  @include netsparks-action-bar-button();
+}
+
+.netsparks-header-action-bar:hover .netsparks-header-action-bar-icon-button {
+  @include netsparks-action-bar-button-hover();
+}

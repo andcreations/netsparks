@@ -1,0 +1,42 @@
+$netsparks-bookmarks-dropdown-padding: 0.25rem;
+
+.netsparks-bookmarks-dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.netsparks-bookmarks-dropdown-wrapper-hidden {
+  visibility: hidden;
+}
+
+.netsparks-bookmarks-dropdown {
+  position: absolute;
+  top: 0.25rem;
+  width: calc(100% - 2 * $netsparks-bookmarks-dropdown-padding);
+  margin-left: $netsparks-bookmarks-dropdown-padding;
+  margin-right: $netsparks-bookmarks-dropdown-padding;
+
+// bootstrap
+  padding-top: $input-padding-y;
+  padding-bottom: $input-padding-y;
+  background-color: $input-bg;
+  border: $input-border-width solid $input-border-color;
+  @include border-radius($input-border-radius, 0);
+}
+
+.netsparks-bookmarks-dropdown-item {
+  @include netsparks-flex-container();
+
+// bootstrap
+  padding-left: $input-padding-x;
+  padding-right: $input-padding-x;
+}
+
+.netsparks-bookmarks-dropdown-item-selected {
+  background-color: $gray-800;
+}
+
+.netsparks-bookmarks-dropdown-label {
+  flex-grow: 1;
+  text-decoration: none;
+}

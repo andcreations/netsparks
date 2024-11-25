@@ -1,0 +1,16 @@
+@mixin netsparks-flex-container() {
+  display: flex;
+}
+
+@mixin netsparks-flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin netsparks-flex-horizontal() {
+  flex-direction: row;
+}
+
+@mixin netsparks-flex-vertical() {
+  flex-direction: column;
+}

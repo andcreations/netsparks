@@ -1,0 +1,64 @@
+.netsparks-list-entry {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  border-radius: 0.25rem;
+
+  &:hover {
+    background-color: $gray-800;
+  }
+}
+
+.netsparks-list-entry-done {
+  &:hover {
+    background-color: $gray-800;
+    color: $gray-500;
+  }
+
+  .netsparks-list-entry-title {
+    color: $gray-700;
+  }
+}
+
+.netsparks-list-entry-title {
+  @include netsparks-flex-container();
+  @include netsparks-flex-vertical();
+  color: $gray-500;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.netsparks-list-entry-notes {
+  color: $gray-600;
+  font-size: 0.75rem;
+}
+
+.netsparks-list-entry-action-bar {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.netsparks-list-entry-action-link {
+  color: $gray-600;
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.netsparks-list-entry-action-link:hover {
+  color: $blue-300;
+}
+
+.netsparks-list-entry-icon-button {
+  opacity: 0;
+  @include netsparks-action-bar-button();
+}
+
+.netsparks-list-entry:hover .netsparks-list-entry-icon-button {
+  opacity: 1;
+  @include netsparks-action-bar-button-hover();
+}

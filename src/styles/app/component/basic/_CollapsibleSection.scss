@@ -1,0 +1,4 @@
+.netsparks-collapsible-section-header-title {
+  @include netsparks-flex-container();
+  cursor: pointer;
+}

@@ -1,0 +1,1 @@
+export type AppStateValues = { [key: string]: any };

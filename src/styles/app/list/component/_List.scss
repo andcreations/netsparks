@@ -1,0 +1,20 @@
+.netsparks-list {
+  padding-bottom: 1rem;
+}
+
+.netsparks-list-action-bar {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+  opacity: 0;
+  font-size: 0.8175rem;
+  color: $gray-600;
+}
+
+.netsparks-list-action-bar-separator {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.netsparks-list .netsparks-list-header:hover .netsparks-list-action-bar {
+  opacity: 1;
+}

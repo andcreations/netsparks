@@ -1,0 +1,19 @@
+$netsparks-navbar-height: 4rem;
+
+.netsparks-navbar {
+  background-color: mix($gray-800, $gray-900, 50%);
+}
+
+.netsparks-navbar-container {
+  @include netsparks-flex-container();
+}
+
+.netsparks-navbar-left {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.netsparks-navbar-right {
+  flex-grow: 0;
+  flex-shrink: 1;
+}

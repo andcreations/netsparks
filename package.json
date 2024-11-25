@@ -1,0 +1,53 @@
+{
+  "name": "@andcreations/netsparks",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build-tools": "tsc -p ./src/tools --outDir ./build/tools",
+    "build-styles": "node build/tools/build styles",
+    "build-assets": "node build/tools/build assets",
+    "build-app": "node build/tools/build app",
+    "build-html": "node build/tools/build html",
+    "build-all": "node build/tools/build all",
+    "build": "npm run build-tools && node build/tools/build all",
+    "clean": "rm -rf build && rm -rf node_modules",
+    "watch": "node build/tools/watch"
+  },
+  "author": "Mikolaj Gucki",
+  "license": "MIT",
+  "dependencies": {
+    "@andcreations/common": "github:andcreations/common.git#0.1.13",
+    "@andcreations/web-common": "github:andcreations/web-common#0.1.0",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "crypto-browserify": "^3.12.0",
+    "dropbox": "^10.34.0",
+    "html-to-react": "^1.7.0",
+    "lodash": "^4.17.21",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.10.5",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.2.2",
+    "reflect-metadata": "^0.1.13",
+    "util": "^0.12.5",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "@andcreations/web-builder": "github:andcreations/web-builder.git#0.2.0",
+    "@types/node": "^16.9.1",
+    "@types/react": "^18.1.0",
+    "@types/react-dom": "^18.1.0",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "resolutions": {
+    "@types/react": "^18.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+.netsparks-no-data-prompt {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+  @include netsparks-flex-vertical();
+}
+
+.netsparks-no-data-prompt-details {
+  color: $gray-600;
+  font-size: 0.75rem;
+}

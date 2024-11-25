@@ -1,0 +1,17 @@
+.netsparks-material-icon-check {
+  color: $gray-600;
+  cursor: pointer;
+
+  &:hover {
+    color: $gray-400;
+  }
+}
+
+.netsparks-material-icon-check-checked {
+  color: $blue-500;
+
+  &:hover {
+    color: $blue-300;
+  }
+}
+

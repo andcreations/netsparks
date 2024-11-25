@@ -1,0 +1,10 @@
+.netsparks-lists-bottom-toolbar {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+}
+
+.netsparks-lists-bottom-toolbar-content {
+  @include netsparks-flex-container();
+  @include netsparks-flex-center();
+  width: 36rem;
+}

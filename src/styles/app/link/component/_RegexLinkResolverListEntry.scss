@@ -1,0 +1,16 @@
+.netsparks-regex-link-entry {
+  @include netsparks-flex-container();
+  @include netsparks-flex-horizontal();
+}
+
+.netsparks-regex-link-resolver-list-entry-regex {
+  display: block;
+  width: 16rem;
+  text-align: right;
+}
+
+.netsparks-regex-link-resolver-list-entry-dot {
+  color: $gray-700;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
